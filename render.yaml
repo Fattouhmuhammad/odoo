@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: odoo
+    env: docker
+    repo: https://github.com/YOUR_USERNAME/odoo
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 8069
